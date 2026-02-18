@@ -37,11 +37,27 @@ print("============ reverse string ==============")
 print(mylist[::-1])  # this creates a new list that is the reverse of the original list
 
 # Tuples are like lists, but they are immutable
-
+print("============ tuples ==============")
+mytuple = (1, 2, 3, "four", "five", 6.0)
+print(mytuple)
+print(mytuple[0])  # access the first element
+print(mytuple[3])  # access the fourth element  
+print(mytuple[-1])  # access the last element
+print(mytuple[1:4])  # access a slice of the tuple (from index 1 to 3)
+print(mytuple[:3])  # access the first three elements
 
 # Sets are also sequences, but they contain unique values
-
+print("============ sets ==============")
+myset = {1, 2, 3, "four", "five", 6.0, 1}
+print(myset)
 # Set, however, can not be indexed like lists or tuples
-# print(myset[0]) # this will cause an error
+#print(myset[0]) # this will cause an error
 
 # Test for membership
+print("four" in myset)  # True
+print("ten" in myset)  # False
+print(1 in myset)  # True
+print(10 in mytuple)  # False
+print(1 in mytuple)  # True
+print(1 in mylist)  # True
+print(10 in mylist)  # False
