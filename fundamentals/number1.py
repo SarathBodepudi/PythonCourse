@@ -1,7 +1,4 @@
-"""
-This script demonstrates basic number manipulation in Python.
-It initializes an integer, converts it to a float, and then back to an integer,
-"""
+
 number1 = 10
 print("The number is:", number1)
 print("The type of number is:", type(number1))
